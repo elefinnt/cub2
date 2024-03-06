@@ -1,4 +1,4 @@
-import { CheckCircle, LucideIcon } from "lucide-react";
+import { ArrowRight, CheckCircle, LucideIcon } from "lucide-react";
 
 interface BlueGridData {
   icon: LucideIcon;
@@ -33,6 +33,15 @@ const BlueGrid: React.FC<BlueGridProps> = ({ infoData }) => {
             ))}
           </div>
         </div>
+      </div>
+      {/* button text to be made dynamic */}
+      <div className="px-[109px] my-[60px]">
+        <button className="mt-12 bg-[#445aec] px-8 py-4 flex space-x-1 hover:bg-black hover:text-white">
+          <p className="text-white font-medium text-xl tracking-[-.3px]">
+            Kick off AI consulting
+          </p>
+          <ArrowRight height={30} width={15} />
+        </button>
       </div>
     </div>
   );
