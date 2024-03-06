@@ -1,7 +1,35 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 import InfoGrid from "./_components/info-grid";
 import Image from "next/image";
 import BlueGrid from "./_components/blue-info-grid";
+
+const infoData = [
+  {
+    icon: CheckCircle,
+    title: "Strategy.",
+    desc: "We will identify promising use cases, assess Gen AI's impact on your workflows, and establish specific goals for your initiatives.",
+  },
+  {
+    icon: CheckCircle,
+    title: "Tech stack.",
+    desc: "Based on your business needs, our AI consultants will recommend commercially available Gen AI tools or open-source models.",
+  },
+  {
+    icon: CheckCircle,
+    title: "Data.",
+    desc: "Should you need to fine-tune Gen AI with corporate data, our AI consulting firm will collect, clean, and annotate it.",
+  },
+  {
+    icon: CheckCircle,
+    title: "Implementation.",
+    desc: "Experienced AI consultants will navigate you through the Gen AI implementation process, from integration to employee onboarding.",
+  },
+  {
+    icon: CheckCircle,
+    title: "Optimization.",
+    desc: "Our AI consulting company helps clients monitor Gen AI applications, identify areas for improvement, and optimize model accuracy.",
+  },
+];
 
 const SolutionsPage = () => {
   return (
@@ -56,6 +84,8 @@ const SolutionsPage = () => {
         </div>
       </div>
       {/* This whole block needs figuring out - text isnt completely centre aligned with image but itll do for now */}
+      {/* This needs to be made into a component */}
+
       <div className="relative w-full min-h-full">
         <div className="relative h-[480px] flex justify-start">
           <Image
@@ -85,7 +115,7 @@ const SolutionsPage = () => {
           retraining models on your data.
         </p>
       </div>
-      <BlueGrid />
+      <BlueGrid infoData={infoData} />
     </>
   );
 };
