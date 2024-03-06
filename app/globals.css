@@ -112,3 +112,33 @@
 .content-container-sm {
   @apply px-20;
 }
+
+.list-item-text {
+  max-width: 350px;
+  line-height: 1.5;
+  letter-spacing: -0.05px;
+  white-space: pre-line;
+}
+
+.list-list {
+  margin: 24px -12px -12px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-col {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}
+.list-item {
+  margin: 12px;
+  display: flex;
+  font-size: 18px;
+}
+.list-item-icon {
+  margin-top: 0.4em;
+  margin-right: 24px;
+  flex: 0 0 auto;
+  width: 34px;
+  height: 36px;
+}
