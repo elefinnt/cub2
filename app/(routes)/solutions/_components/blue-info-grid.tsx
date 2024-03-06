@@ -1,4 +1,4 @@
-import { ArrowRight, CheckCircle, LucideIcon } from "lucide-react";
+import { ArrowRight, LucideIcon } from "lucide-react";
 
 interface BlueGridData {
   icon: LucideIcon;
@@ -17,15 +17,13 @@ const BlueGrid: React.FC<BlueGridProps> = ({ infoData }) => {
         <div className="px-[109px] py-[60px]">
           <div className="grid grid-cols-2">
             {infoData.map((data, index) => (
-              <div key={index}>
-                <div className="list-list">
-                  <div className="list-col">
-                    <div className="list-item">
-                      <data.icon className="list-item-icon" />
-                      <div className="list-item-text">
-                        <b>{data.title} </b>
-                        {data.desc}
-                      </div>
+              <div key={index} className="list-list">
+                <div className="list-col">
+                  <div className="list-item">
+                    <data.icon className="list-item-icon" />
+                    <div className="list-item-text">
+                      <b>{data.title} </b>
+                      {data.desc}
                     </div>
                   </div>
                 </div>

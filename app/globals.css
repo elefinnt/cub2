@@ -142,3 +142,27 @@
   width: 34px;
   height: 36px;
 }
+.neutral-item-title {
+  margin-top: 36px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.05px;
+}
+.neutral-item-text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.05px;
+  color: #747272;
+}
+.neutral-wrapper {
+  margin: 0 -20px;
+  justify-content: space-between;
+}
+
+.neutral-icon {
+  height: 56px;
+  width: 56px;
+  margin-bottom: 36px;
+}

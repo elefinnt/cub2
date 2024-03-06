@@ -1,7 +1,16 @@
-import { ArrowRight, CheckCircle } from "lucide-react";
+import {
+  ArrowRight,
+  CheckCircle,
+  Gift,
+  HeartPulse,
+  Microscope,
+  PiggyBank,
+} from "lucide-react";
 import InfoGrid from "./_components/info-grid";
 import Image from "next/image";
 import BlueGrid from "./_components/blue-info-grid";
+import ImageWithText from "./_components/image-text";
+import NeutralGrid from "./_components/neutral-info-grid";
 
 const infoData = [
   {
@@ -31,6 +40,73 @@ const infoData = [
   },
 ];
 
+const happens = [
+  {
+    icon: CheckCircle,
+    title: "Proven expertise.",
+    desc: "We are a global team of 230 IT professionals with full-stack software engineering skills and an aptitude for artificial intelligence development. From providing five-star artificial intelligence consulting services to assisting our clients in engineering, testing, deploying, and scaling AI solutions, there is no need we cannot fulfill.",
+  },
+  {
+    icon: CheckCircle,
+    title: "Transparency.",
+    desc: "Our AI consultancy provides a variety of collaborative models and approaches. We are also not committed to any specific technology or vendor. And we will not recommend using artificial intelligence in situations where a simpler solution, such as RPA, would be sufficient.",
+  },
+  {
+    icon: CheckCircle,
+    title: "Innovative mindset.",
+    desc: "Curious minds and genuine interest in artificial intelligence lay the groundwork for our AI consulting services. We had jumped on the AI bandwagon before it became mainstream and have been keeping our finger on the pulse of artificial intelligence advances ever since.",
+  },
+  {
+    icon: CheckCircle,
+    title: "Focus on success.",
+    desc: `Our AI consultants care about your business outcomes. That is why we practice the "start small, think big" mantra and take an iterative approach to AI implementation. By beginning projects with artificial intelligence consulting, we help clients maximize the return on their technology investments and avoid costly mistakes later in the development process.`,
+  },
+];
+
+const imageText = [
+  {
+    whiteText: "AI consulting services",
+    yellowText: "for generative AI pioneers",
+    image: "/AI-head.jpg",
+  },
+  {
+    whiteText: "Artificial intelligence consultants",
+    yellowText: "with domain expertise",
+    image: "/guy.jpg",
+  },
+  {
+    whiteText: "CUB: an AI consulting company",
+    yellowText: "you can rely on",
+    image: "/void.jpg",
+  },
+  {
+    whiteText: "FAQ",
+    image: "/thinker.jpg",
+  },
+];
+
+const neutralGrid = [
+  {
+    icon: HeartPulse,
+    title: "Healthcare",
+    desc: "Our tailored AI consulting services for healthcare professionals include IT infrastructure and data audits, mapping AI technologies to patient care and operational needs, conducting feasibility studies and cost-benefit analyses, and providing regulatory and compliance advice.",
+  },
+  {
+    icon: Gift,
+    title: "Retail",
+    desc: "Our AI consultancy has firsthand experience implementing artificial intelligence for offline retail and eCommerce businesses. We can advise you on how to use intelligent algorithms to personalize customer experiences, identify sales opportunities, and spot trends.",
+  },
+  {
+    icon: Microscope,
+    title: "Biotech & Life Science",
+    desc: "ITRex AI consultants will help you speed up drug discovery and clinical trials and ensure robust quality control. We are well-versed in AI technology scouting, project roadmapping, change management, and other disciplines that will help your initiative succeed.",
+  },
+  {
+    icon: PiggyBank,
+    title: "Finance",
+    desc: "As an artificial intelligence consulting company, we’ll recommend the right set of AI technologies and frameworks to enhance the KYC process and risk assessment, capitalize on algorithmic trading, personalize banking services, and prevent fraud.",
+  },
+];
 const SolutionsPage = () => {
   return (
     <>
@@ -86,25 +162,7 @@ const SolutionsPage = () => {
       {/* This whole block needs figuring out - text isnt completely centre aligned with image but itll do for now */}
       {/* This needs to be made into a component */}
 
-      <div className="relative w-full min-h-full">
-        <div className="relative h-[480px] flex justify-start">
-          <Image
-            src="/AI-Head.jpg"
-            fill
-            alt="head"
-            className="object-cover absolute"
-          />
-          <div className="px-[189px]">
-            <h2 className="text-content relative text-white max-w-3xl">
-              AI consulting services
-              <span className="text-[#ffdb3b]">
-                {" "}
-                for generative AI pioneers
-              </span>
-            </h2>
-          </div>
-        </div>
-      </div>
+      <ImageWithText imageTextData={imageText[0]} />
       <div className="block-yellow content-container py-[60px]">
         <p className="landing-subheader__text_small">
           We provide comprehensive generative AI consulting services to
@@ -116,6 +174,12 @@ const SolutionsPage = () => {
         </p>
       </div>
       <BlueGrid infoData={infoData} />
+      <ImageWithText imageTextData={imageText[1]} />
+      <NeutralGrid gridData={neutralGrid} />
+      <ImageWithText imageTextData={imageText[2]} />
+      <BlueGrid infoData={happens} />
+
+      <ImageWithText imageTextData={imageText[3]} />
     </>
   );
 };
