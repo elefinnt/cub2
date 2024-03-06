@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import InfoGrid from "./_components/info-grid";
+import Image from "next/image";
 
 const SolutionsPage = () => {
   return (
@@ -45,14 +46,33 @@ const SolutionsPage = () => {
           <InfoGrid />
         </div>
         <div className=" pb-20">
-          <button className="mt-12 bg-[#445aec] px-8 py-4 flex space-x-1">
+          <button className="mt-12 bg-[#445aec] px-8 py-4 flex space-x-1 hover:bg-black hover:text-white">
             <p className="text-white font-medium text-xl tracking-[-.3px]">
               Get started with AI consulting
             </p>
             <ArrowRight height={30} width={15} />
           </button>
         </div>
-        <div>New content</div>
+      </div>
+      {/* This whole block needs figuring out - text isnt completely centre aligned with image but itll do for now */}
+      <div className="relative w-full min-h-full">
+        <div className="relative h-[480px] flex justify-start">
+          <Image
+            src="/AI-Head.jpg"
+            fill
+            alt="head"
+            className="object-cover absolute"
+          />
+          <div className="px-[189px]">
+            <h2 className="text-content relative text-white max-w-3xl">
+              AI consulting services
+              <span className="text-[#ffdb3b]">
+                {" "}
+                for generative AI pioneers
+              </span>
+            </h2>
+          </div>
+        </div>
       </div>
     </>
   );
