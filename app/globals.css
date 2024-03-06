@@ -89,3 +89,26 @@
   letter-spacing: -1px;
   white-space: pre-line;
 }
+
+.landing-info__text_mini {
+  font-size: 26px;
+  line-height: 39px;
+  max-width: 930px;
+  letter-spacing: -0.05px;
+  white-space: pre-line;
+}
+
+.landing-subheader__text_small {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.05px;
+  max-width: 730px;
+}
+
+.block-yellow {
+  background-color: #ffdb3b;
+}
+
+.content-container-sm {
+  @apply px-20;
+}

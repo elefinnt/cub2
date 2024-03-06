@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import InfoGrid from "./_components/info-grid";
 import Image from "next/image";
+import BlueGrid from "./_components/blue-info-grid";
 
 const SolutionsPage = () => {
   return (
@@ -32,7 +33,7 @@ const SolutionsPage = () => {
           <h1 className="mb-7 text-[38px] tracking-[-1px] font-semibold leading-[1.1] whitespace-pre-line max-w-4xl">
             CUB AI consulting services at a glance
           </h1>
-          <h1 className="text-[26px] leading-9 tracking-[-.05px] max-w-[930px] font-normal">
+          <h1 className="landing-info__text_mini">
             {/* needs hyperlinks to other routes */}
             As an AI consulting company, CUB is well-equipped to help your
             organization integrate AI capabilities—from straightforward machine
@@ -74,6 +75,17 @@ const SolutionsPage = () => {
           </div>
         </div>
       </div>
+      <div className="block-yellow content-container py-[60px]">
+        <p className="landing-subheader__text_small">
+          We provide comprehensive generative AI consulting services to
+          businesses seeking to leverage novel technology for increased
+          efficiency, productivity, and automation. CUB AI consultants can
+          assist you in integrating off-the-shelf Gen AI tools with corporate
+          applications, deploying open-source Gen AI solutions as-is, or
+          retraining models on your data.
+        </p>
+      </div>
+      <BlueGrid />
     </>
   );
 };
