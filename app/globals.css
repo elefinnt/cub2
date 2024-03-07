@@ -166,3 +166,9 @@
   width: 56px;
   margin-bottom: 36px;
 }
+.accordion-description {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.05px;
+  color: #6c6c6c;
+}

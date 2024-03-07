@@ -11,6 +11,7 @@ import Image from "next/image";
 import BlueGrid from "./_components/blue-info-grid";
 import ImageWithText from "./_components/image-text";
 import NeutralGrid from "./_components/neutral-info-grid";
+import { SolutionsAccordion } from "./_components/solutions-accordion";
 
 const infoData = [
   {
@@ -178,8 +179,8 @@ const SolutionsPage = () => {
       <NeutralGrid gridData={neutralGrid} />
       <ImageWithText imageTextData={imageText[2]} />
       <BlueGrid infoData={happens} />
-
       <ImageWithText imageTextData={imageText[3]} />
+      <SolutionsAccordion />
     </>
   );
 };
