@@ -32,7 +32,7 @@ export function SolutionsAccordion() {
           <AccordionContent className="accordion-description">
             AI consulting typically results in a variety of deliverables,
             depending on the scope and goals of the consultation. These may
-            include: - Reports on your company's current capabilities and
+            include: - Reports on your company&apos;s current capabilities and
             readiness for AI implementation - Detailed plans outlining steps,
             timelines, and resources required for AI adoption - Analysis of
             potential AI projects, including technical feasibility and expected
@@ -51,12 +51,12 @@ export function SolutionsAccordion() {
             crucial. Consider the following factors: - Look for a partner with a
             proven track record in AI consulting and projects, particularly
             within your industry - Ensure their AI consulting approach aligns
-            with your company's goals and they have a clear methodology for
+            with your company&apos;s goals and they have a clear methodology for
             assessing needs and implementing solutions - The AI consulting
             company should be technology-agnostic, offering solutions that best
             fit your specific needs rather than pushing one-size-fits-all tools
             - Your AI consultants should be able to seamlessly integrate with
-            your team, understand your company's culture, and work
+            your team, understand your company&apos;s culture, and work
             collaboratively towards shared goals
           </AccordionContent>
         </AccordionItem>
@@ -67,7 +67,7 @@ export function SolutionsAccordion() {
           </AccordionTrigger>
           <AccordionContent className="accordion-description">
             The cost of using AI and generative AI in your business can vary
-            greatly depending on the project's complexity, the specific AI
+            greatly depending on the project&apos;s complexity, the specific AI
             technologies used, and the scope of implementation. The costs can
             range from tens of thousands to several million dollars, which
             includes development, data preparation, training, and integration.
