@@ -252,10 +252,17 @@
 }
 .form-top-block {
   display: block;
-  width: 48%;
+  width: 85%;
 }
 .input-wrapper {
   padding-bottom: 21px;
   width: 100%;
   transition: color 0.2s;
+}
+.input-wrapper:focus {
+  outline: none;
+  background-color: transparent;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }

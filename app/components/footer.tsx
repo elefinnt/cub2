@@ -1,4 +1,4 @@
-import ClientCarousel from "./client-carousel";
+import { ClientCarousel } from "./client-carousel";
 import ContactForm from "./contact-form";
 import Headstone from "./headstone";
 import ProjectsCarousel from "./projects-carousel";

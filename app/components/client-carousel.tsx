@@ -1,70 +1,34 @@
-const clients = [
-  {
-    name: "Olmypics NZ",
-  },
-  {
-    name: "High Performance NZ",
-  },
-  {
-    name: "Boxing NZ",
-  },
-  {
-    name: "Athletics NZ",
-  },
-  {
-    name: "Yachting NZ",
-  },
-  {
-    name: "Echo Reports",
-  },
-  {
-    name: "Xero",
-  },
-  {
-    name: "Strategic Pay",
-  },
-  {
-    name: "Masters",
-  },
-  {
-    name: "Potentia",
-  },
-  {
-    name: "RCP",
-  },
-  {
-    name: "Kindello",
-  },
-  {
-    name: "Chester",
-  },
-  {
-    name: "Arria",
-  },
-  {
-    name: "South",
-  },
-  {
-    name: "Spaceworks",
-  },
-  {
-    name: "Orchestra",
-  },
+import Image from "next/image";
+
+const imageLinks = [
+  "https://www.cubdigital.co.nz/_next/image?url=%2Fprojects%2Fstrategic.png&w=1920&q=75",
+  "https://www.cubdigital.co.nz/_next/image?url=%2Fprojects%2Fstrategic.png&w=1920&q=75",
+  "https://www.cubdigital.co.nz/_next/image?url=%2Fprojects%2Fstrategic.png&w=1920&q=75",
+
+  "https://www.cubdigital.co.nz/_next/image?url=%2Fprojects%2Fstrategic.png&w=1920&q=75",
+
+  "https://www.cubdigital.co.nz/_next/image?url=%2Fprojects%2Fstrategic.png&w=1920&q=75",
+
+  "https://www.cubdigital.co.nz/_next/image?url=%2Fprojects%2Fstrategic.png&w=1920&q=75",
+
+  "https://www.cubdigital.co.nz/_next/image?url=%2Fprojects%2Fstrategic.png&w=1920&q=75",
+
+  // Add more image links as needed
 ];
 
-const ClientCarousel = () => {
+export const ClientCarousel = () => {
   return (
-    <div className="client-content-container">
-      <h2 className="client-content-text mb-20">Our clients</h2>
-      <div className="client-list">
-        {clients.map((client, index) => (
-          <div key={index} className="client-item flex flex-row">
-            {client.name}
-          </div>
-        ))}
-      </div>
+    <div className="group flex space-x-16 overflow-hidden">
+      {imageLinks.map((imageLink, index) => (
+        <div key={index} className=" flex animate-loop-scroll space-x-16">
+          <Image
+            src={imageLink}
+            width={200} // Specify your desired width
+            height={200} // Specify your desired height
+            alt={`Image ${index + 1}`}
+          />
+        </div>
+      ))}
     </div>
   );
 };
-
-export default ClientCarousel;
