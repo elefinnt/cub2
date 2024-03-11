@@ -12,6 +12,9 @@ import BlueGrid from "./_components/blue-info-grid";
 import ImageWithText from "./_components/image-text";
 import NeutralGrid from "./_components/neutral-info-grid";
 import { SolutionsAccordion } from "./_components/solutions-accordion";
+import ProjectsCarousel from "@/app/components/projects-carousel";
+import { ClientCarousel } from "@/app/components/client-carousel";
+import ReferencePresentation from "@/app/components/reference-presentation";
 
 const infoData = [
   {
@@ -181,6 +184,9 @@ const SolutionsPage = () => {
       <BlueGrid infoData={happens} />
       <ImageWithText imageTextData={imageText[3]} />
       <SolutionsAccordion />
+      <ProjectsCarousel />
+      <ClientCarousel />
+      <ReferencePresentation />
     </>
   );
 };
