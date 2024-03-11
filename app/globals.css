@@ -268,12 +268,75 @@
   position: relative;
   overflow: hidden;
 }
-.header-first {
+.headstone-first {
   display: flex;
   justify-content: flex-start;
   margin-bottom: 80px;
 }
-.header-second {
+.headstone-logo {
+  display: block;
+  width: 300px;
 }
-.header-third {
+.headstone-title {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 110%;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+}
+.headstone-second-left {
+  display: block;
+  width: 300px;
+}
+.headstone-second-left-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.headstone-second-right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  margin-left: 90px;
+}
+.headstone-second-right-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+  display: block;
+  width: 100%;
+}
+.headstone-second-right-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  align-self: flex-end;
+}
+.headstone-third {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.headstone-third-policy {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 140%;
+  color: #8f8f97;
+  display: block;
+  width: 300px;
+}
+.headstone-third-cert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
