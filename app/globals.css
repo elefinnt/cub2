@@ -340,3 +340,44 @@
   justify-content: space-between;
   align-items: center;
 }
+.reviews-content {
+  position: relative;
+  height: 320px;
+}
+.reviews-title {
+  order: 1;
+  flex: 1 1;
+  margin-left: 333px;
+  position: relative;
+  max-width: 1000px px;
+  font-size: 55px;
+  line-height: 65px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+.reviews-author {
+  margin-right: 60px;
+  flex: 0 0 auto;
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  font-size: 15px;
+  line-height: 20px;
+}
+.reviews-photo {
+  margin-right: 25px;
+  display: flex;
+}
+.reviews-author-info {
+  color: #ffdb3b;
+}
+.author-name {
+  font-weight: 600;
+}
+.reviews-nav {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+}
