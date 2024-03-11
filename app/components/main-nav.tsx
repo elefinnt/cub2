@@ -93,19 +93,21 @@ export function MainNav({
                 <NavigationMenuTrigger>{route.label}</NavigationMenuTrigger>
                 <NavigationMenuContent className="border border-red-500 ">
                   <NavigationMenuLink>
-                    {route.subRoutes?.map((subRoute: Route) => (
-                      <NavigationMenu>
-                        <NavigationMenuList>
-                          <NavigationMenuItem>
-                            <NavigationMenuTrigger>
-                              {subRoute.label}
-                            </NavigationMenuTrigger>
-                            <NavigationMenuContent>
-                              <NavigationMenuLink></NavigationMenuLink>
-                            </NavigationMenuContent>
-                          </NavigationMenuItem>
-                        </NavigationMenuList>
-                      </NavigationMenu>
+                    {route.subRoutes?.map((subRoute: Route, i) => (
+                      <div key={i}>
+                        <NavigationMenu>
+                          <NavigationMenuList>
+                            <NavigationMenuItem>
+                              <NavigationMenuTrigger>
+                                {subRoute.label}
+                              </NavigationMenuTrigger>
+                              <NavigationMenuContent>
+                                <NavigationMenuLink></NavigationMenuLink>
+                              </NavigationMenuContent>
+                            </NavigationMenuItem>
+                          </NavigationMenuList>
+                        </NavigationMenu>
+                      </div>
                     ))}
                   </NavigationMenuLink>
                 </NavigationMenuContent>

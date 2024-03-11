@@ -131,7 +131,7 @@ const SolutionsPage = () => {
             <ArrowRight height={30} width={15} />
           </button>
         </div>
-        <img src="brain.jpg" alt="Brain" height={766} width={766} />
+        <Image src="brain.jpg" alt="Brain" height={766} width={766} />
       </div>
       <div className="content-container">
         <div className="py-[60px]">
@@ -144,7 +144,7 @@ const SolutionsPage = () => {
             organization integrate AI capabilities—from straightforward machine
             learning to deep neural networks—into existing and novel software
             solutions. Each of our artificial intelligence consulting services
-            yields tangible results that guide your company's journey to AI
+            yields tangible results that guide your company&apos;s journey to AI
             excellence.
           </h1>
         </div>
