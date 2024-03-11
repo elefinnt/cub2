@@ -68,7 +68,7 @@ const imageText = [
   {
     whiteText: "AI consulting services",
     yellowText: "for generative AI pioneers",
-    image: "/AI-head.jpg",
+    image: "/AI-Head.jpg",
   },
   {
     whiteText: "Artificial intelligence consultants",
@@ -131,7 +131,7 @@ const SolutionsPage = () => {
             <ArrowRight height={30} width={15} />
           </button>
         </div>
-        <Image src="brain.jpg" alt="Brain" height={766} width={766} />
+        <Image src="/brain.jpg" alt="Brain" height={766} width={766} />
       </div>
       <div className="content-container">
         <div className="py-[60px]">
