@@ -454,34 +454,6 @@
   line-height: 1.65;
   letter-spacing: -1px;
 }
-/* .about-office-list {
-  font-size: 90px;
-  line-height: 1.65;
-  letter-spacing: -1px;
-  margin-top: 20px;
-  margin-left: -80px;
-  margin-right: -80px;
-  padding-left: 80px;
-  padding-right: 80px;
-  overflow: hidden;
-  color: white;
-}
-.about-office-list-append {
-  margin-left: 2.15em;
-  display: inline-block;
-}
-
-.about-office-list-content {
-  position: relative;
-  white-space: nowrap;
-  animation: 6s slide infinite linear;
-}
-.about-office-item {
-  position: relative;
-  height: 100%;
-  display: inline-block;
-  line-height: 1;
-} */
 
 .logos-slide a {
   font-size: 90px;
@@ -512,4 +484,355 @@
   line-height: 80px;
   letter-spacing: -0.5px;
   white-space: pre-line;
+}
+.section-1-wrap {
+  position: relative;
+  overflow: hidden;
+  background: #000
+    url(https://itrexgroup.com/wp-content/themes/itrex/assets/images/how-we-work/how-we-work-bg.png)
+    no-repeat center center;
+  background-size: cover;
+}
+.section-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  height: 100vh;
+  min-height: 500px;
+}
+.section-1-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 100%;
+  letter-spacing: -0.018em;
+  color: #ffffff;
+  width: 100%;
+  padding-top: 100px;
+}
+.section-1-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto 90px;
+}
+.section-1-bottom-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+.section-1-text:first-child {
+  margin-right: 30px;
+  position: relative;
+}
+.section-1-text:first-child:after {
+  content: "";
+  display: block;
+  height: 112px;
+  width: 1px;
+  background: #bcbcbc;
+  position: absolute;
+  top: 5px;
+  left: calc(100% + 15px);
+}
+.section-1-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+  color: #bcbcbc;
+  display: block;
+  max-width: 260px;
+}
+.main-section-1-button {
+  width: 350px;
+  height: 60px;
+  background: #4861fc;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 140%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  cursor: pointer;
+}
+.section-2-wrap {
+  border-bottom: 2px solid #ebebeb;
+}
+.section-2 {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 115px 0 90px;
+}
+.section-2-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.section-2-tabs {
+  display: block;
+  padding: 40px 0 10px;
+}
+.section-2-title {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 110%;
+  letter-spacing: -1.5px;
+  color: #000000;
+  width: 50%;
+}
+.section-2-text {
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+  color: #8f8f97;
+  width: 50%;
+  max-width: 440px;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+.section-2-tabs-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.section-2-tabs-btn {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  color: #000000;
+  display: block;
+  width: 290px;
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+}
+.section-2-tabs-content {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+  color: #000000;
+  display: block;
+  width: 100%;
+  max-width: 475px;
+  margin-right: 100px;
+}
+.section-2-tabs-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.section-2-tabs-list-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+.section-2-tabs-list-item {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+  color: #989898;
+  margin-bottom: 15px;
+  padding-left: 33px;
+  position: relative;
+}
+.section-2-tabs-list-item:before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 15px;
+  background: url(https://itrexgroup.com/wp-content/themes/itrex/assets/images/how-we-work/how-we-work-list.svg)
+    no-repeat center center;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+.content-button {
+  width: 350px;
+  height: 60px;
+  background: #4861fc;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 140%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+/* .section-2-tabs-btn.active:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background: #4861fc;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.section-2-tabs-btn :after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #ebebeb;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+} */
+.section-3-wrap {
+}
+.section-3 {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 0 90px;
+}
+.section-3-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 110%;
+  letter-spacing: -1.5px;
+  color: #000000;
+  margin-bottom: 45px;
+}
+.section-3-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+  color: #8f8f97;
+  display: block;
+  width: 100%;
+  max-width: 885px;
+  margin-bottom: 90px;
+}
+.section-3-tabs {
+  margin-bottom: 60px;
+}
+.section-3-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 35px 0;
+  box-sizing: border-box;
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  margin-bottom: -1px;
+}
+.section-3-tab-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+.section-3-text-wrap {
+  display: block;
+  width: 50%;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+.section-3-tab-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+  color: #989898;
+  margin-bottom: 30px;
+}
+.section-3-show-more {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+  color: #000000;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.show-more-icon {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  margin-left: 10px;
+  position: relative;
+}
+
+.section-4 {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 0 170px;
+}
+.section-4-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 110%;
+  letter-spacing: -1.5px;
+  color: #000000;
+}
+.section-4-table-wrap {
+  margin: 60px 0 75px;
+}
+.section-4-table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e4e4e4;
+}
+.section-4-table-row:first-child div {
+  font-weight: 600;
+  color: #4861fc;
+}
+.section-4-table-row div {
+  font-style: normal;
+  font-size: 18px;
+  line-height: 23px;
+  width: 25%;
+  padding: 15px 0;
+}
+.section-4-table-row div:first-child {
+  font-weight: 600;
 }

@@ -29,7 +29,7 @@ const stats = [
   },
 ];
 
-const copmanyData = [
+const companyData = [
   {
     title: "Rhybox",
   },
@@ -93,8 +93,14 @@ const AboutPage = () => {
               <a>Auckland</a>
               <a>Melbourne</a>
               <a>London</a>
+              <a>Auckland</a>
+              <a>Melbourne</a>
+              <a>London</a>
             </div>
             <div className="logos-slide text-white">
+              <a>Auckland</a>
+              <a>Melbourne</a>
+              <a>London</a>
               <a>Auckland</a>
               <a>Melbourne</a>
               <a>London</a>
@@ -148,7 +154,7 @@ const AboutPage = () => {
             <Bus size={52} className="text-yellow mx-[11px]" />
           </span>
         </p>
-        <StatsList statsData={copmanyData} />
+        <StatsList statsData={companyData} />
       </div>
     </>
   );

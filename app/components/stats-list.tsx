@@ -15,7 +15,6 @@ const StatsList: React.FC<StatsProps> = ({ statsData, className }) => {
         {statsData.map((stat, i) => (
           <div className="stats-list-col text-white" key={i}>
             <div className="stats-list-title">{stat.title}</div>
-
             <div className="stats-list-text">{stat.text}</div>
           </div>
         ))}
