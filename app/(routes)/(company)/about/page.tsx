@@ -1,5 +1,5 @@
 import StatsList from "@/app/components/stats-list";
-import { AboutAccordion } from "../_components/about-accordion";
+import { AboutAccordion } from "./_components/about-accordion";
 import { Bus, Heart, Home, ShoppingBag } from "lucide-react";
 
 const stats = [
