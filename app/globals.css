@@ -82,6 +82,9 @@
 .content-container {
   @apply px-[189px];
 }
+.block-content {
+  @apply p-20;
+}
 .content-container-sm {
   @apply px-20;
 }
@@ -143,6 +146,9 @@
   line-height: 150%;
   letter-spacing: -0.05px;
   max-width: 730px;
+}
+.text-yellow {
+  color: #ffdb3b;
 }
 
 .block-yellow {
@@ -380,4 +386,122 @@
   left: 0;
   bottom: 0;
   display: flex;
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  min-height: 100%;
+  z-index: 1;
+}
+.about-title {
+  max-width: 1500px;
+  margin-left: -0.075em;
+  z-index: 1;
+  font-size: 150px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -4px;
+}
+.about-text {
+  margin-left: -0.075em;
+  padding-top: 80px;
+  max-width: 850px;
+  font-size: 27px;
+  line-height: 40px;
+  letter-spacing: -0.05px;
+}
+.about-section-title {
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -4px;
+  font-size: 130px;
+}
+.stats-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0 -40px;
+}
+.stats-list-col {
+  width: 40%;
+  margin: 40px 0;
+}
+.stats-list-title {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #ffdb3b;
+}
+.stats-list-text {
+  margin-top: 12px;
+  max-width: 12.5em;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+}
+.about-offices {
+  margin-top: 80px;
+  font-size: 90px;
+  line-height: 1.65;
+  letter-spacing: -1px;
+}
+.about-offices-title {
+  font-weight: 700;
+  color: #ffdb3b;
+  margin-top: 80px;
+  font-size: 90px;
+  line-height: 1.65;
+  letter-spacing: -1px;
+}
+/* .about-office-list {
+  font-size: 90px;
+  line-height: 1.65;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  margin-left: -80px;
+  margin-right: -80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  overflow: hidden;
+  color: white;
+}
+.about-office-list-append {
+  margin-left: 2.15em;
+  display: inline-block;
+}
+
+.about-office-list-content {
+  position: relative;
+  white-space: nowrap;
+  animation: 6s slide infinite linear;
+}
+.about-office-item {
+  position: relative;
+  height: 100%;
+  display: inline-block;
+  line-height: 1;
+} */
+
+.logos-slide a {
+  font-size: 90px;
+  margin: 0 40px;
+}
+.logos {
+  overflow: hidden;
+  padding: 60px;
+  white-space: nowrap;
+}
+.logos-slide {
+  display: inline-block;
+  animation: 8s slide infinite linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
