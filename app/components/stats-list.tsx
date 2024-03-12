@@ -1,13 +1,14 @@
 interface Stats {
-  title: string;
-  text: string;
+  title?: string;
+  text?: string;
 }
 
 interface StatsProps {
   statsData: Stats[];
+  className?: string;
 }
 
-const StatsList: React.FC<StatsProps> = ({ statsData }) => {
+const StatsList: React.FC<StatsProps> = ({ statsData, className }) => {
   return (
     <div>
       <div className="stats-list">
