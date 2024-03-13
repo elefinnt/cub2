@@ -789,6 +789,45 @@
   justify-content: flex-start;
   align-items: center;
 }
+.section-3-content-hidden-wrap {
+  display: block;
+  width: 100%;
+}
+.section-3-hidden-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+
+  margin-top: 50px;
+}
+.section-3-hidden-content-list {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 140%;
+  letter-spacing: -0.3px;
+  color: #000;
+  margin-bottom: 30px;
+  padding-left: 33px;
+  position: relative;
+}
+.section-3-hidden-content-list::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 15px;
+  background: url(https://itrexgroup.com/wp-content/themes/itrex/assets/images/how-we-work/how-we-work-list.svg)
+    no-repeat center center;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
 .show-more-icon {
   display: block;
   width: 22px;

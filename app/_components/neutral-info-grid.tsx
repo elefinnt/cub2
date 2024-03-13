@@ -14,8 +14,8 @@ const NeutralGrid: React.FC<GridProps> = ({ gridData }) => {
   return (
     <div className="content-container py-20">
       <div className="grid grid-cols-2 neutral-wrapper gap-y-20">
-        {gridData.map((data, index) => (
-          <div key={index} className="mx-5">
+        {gridData.map((data, i) => (
+          <div key={i} className="mx-5">
             <data.icon className="neutral-icon" />
             <b className="neutral-item-title">{data.title} </b>
             <div className="neutral-item-text">{data.desc}</div>

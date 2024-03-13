@@ -1,5 +1,87 @@
+"use client";
+
 import { CircleFadingPlus } from "lucide-react";
 import MethodologyTabs from "../about/_components/method-tabs";
+import { useState } from "react";
+import EngagementCard from "./_components/engagement-card";
+
+const cardData = [
+  {
+    title: "Time & Materials",
+    description:
+      "Under the Time & Materials model, we can build your software product either in a linear sequence of stages or in increments through constant communication with you. You pay only for actual work done on daily or hourly rates per specialist",
+    subDesc: [
+      {
+        body: "This model is the right way to go when you dont have precise software requirements and the exact project scope is hard to define or is likely to evolve",
+      },
+      {
+        body: "We develop your product in increments. You see the deliverables early and provide feedback, keeping the development process under control",
+      },
+      {
+        body: "You get regular reports from our project manager to track project budget and progress",
+      },
+      {
+        body: "Kickoff is then really fast: we define a high-level scope, agree on daily or hourly rates, and get started",
+      },
+      {
+        body: "Along the way, you can change anything, from the list of planned features to skill sets on the team, to align with changing market trends or business needs",
+      },
+      {
+        body: "You can measure product effectiveness early and pivot or suspend the project at any time, if needed, avoiding further expenses",
+      },
+    ],
+  },
+  {
+    title: "Fixed Price",
+    description:
+      "With this model, we build your software product for a price fixed upfront for the entire project. This often involves planning and estimating the entire project scope before development starts.",
+    subDesc: [
+      {
+        body: "This model is mostly suitable for projects with a well-specified scope and clear requirements that arent going to change",
+      },
+      {
+        body: "All of us get a clear understanding of what exactly the end product and deliverables should be",
+      },
+      {
+        body: "This model requires little to zero involvement from your side after the requirements elicitation and planning stage",
+      },
+      {
+        body: "Together with your team, we begin with gathering requirements and planning thoroughly the project scope and time for product delivery",
+      },
+      {
+        body: "We agree on the total price of the project and start development based on the documented scope, reporting the progress regularly",
+      },
+      {
+        body: "During the development process, you may introduce changes but only through a formal change request process that will require amendments to the contracte",
+      },
+    ],
+  },
+  {
+    title: "Dedicated Team",
+    description:
+      "Alternatively, you can simply hire our highly skilled engineers to fill in specific in-house skill gaps, or go for a full-fledged dedicated and self-managed team. You get professionals that integrate seamlessly into your environment, bring in a fresh angle and ideas, and deliver top results with in-house-like dedication.",
+    subDesc: [
+      {
+        body: "This model is applicable when you need either extra engineering talent to boost your team or full-cycle services, from development to support",
+      },
+      {
+        body: "We offer a 30-day trial period for each specialist",
+      },
+      {
+        body: "You have full control over the team, budget and development process",
+      },
+      {
+        body: "We agree on a monthly cost per specialist or team at the beginning of the projec",
+      },
+      {
+        body: "We can replace any team member based on your feedback or requirements update",
+      },
+      {
+        body: "You are free to scale the team up or down at any moment",
+      },
+    ],
+  },
+];
 
 const How = () => {
   return (
@@ -53,58 +135,9 @@ const How = () => {
             Our aim is to come up with a solution that balances cost efficiency,
             performance, and flexibility best.
           </div>
+          {/* Under here to be mapped? */}
           <div className="section-3-tabs">
-            <div className="section-3-tab">
-              <div className="section-3-tab-title">Time & Materials</div>
-              <div className="section-3-text-wrap">
-                <div className="section-3-tab-text">
-                  {" "}
-                  Under the Time & Materials model, we can build your software
-                  product either in a linear sequence of stages or in increments
-                  through constant communication with you. You pay only for
-                  actual work done on daily or hourly rates per specialist.{" "}
-                </div>
-                <div className="section-3-show-more">
-                  <span>Show More</span>
-                  <CircleFadingPlus className="show-more-icon" />
-                </div>
-              </div>
-              <div className="section-3-text-wrap"></div>
-            </div>
-            <div className="section-3-tab">
-              <div className="section-3-tab-title">Fixed Price</div>
-              <div className="section-3-text-wrap">
-                <div className="section-3-tab-text">
-                  With this model, we build your software product for a price
-                  fixed upfront for the entire project. This often involves
-                  planning and estimating the entire project scope before
-                  development starts.
-                </div>
-                <div className="section-3-show-more">
-                  <span>Show More</span>
-                  <CircleFadingPlus className="show-more-icon" />
-                </div>
-              </div>
-              <div className="section-3-text-wrap"></div>
-            </div>
-            <div className="section-3-tab">
-              <div className="section-3-tab-title">Dedicated Team</div>
-              <div className="section-3-text-wrap">
-                <div className="section-3-tab-text">
-                  Alternatively, you can simply hire our highly skilled
-                  engineers to fill in specific in-house skill gaps, or go for a
-                  full-fledged dedicated and self-managed team. You get
-                  professionals that integrate seamlessly into your environment,
-                  bring in a fresh angle and ideas, and deliver top results with
-                  in-house-like dedication.
-                </div>
-                <div className="section-3-show-more">
-                  <span>Show More</span>
-                  <CircleFadingPlus className="show-more-icon" />
-                </div>
-              </div>
-              <div className="section-3-text-wrap"></div>
-            </div>
+            <EngagementCard cardData={cardData} />
           </div>
           <button className="content-button">Contact Us</button>
         </div>
