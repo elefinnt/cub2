@@ -184,7 +184,7 @@ const SolutionsPage = () => {
       <BlueGrid infoData={happens} />
       <ImageWithText imageTextData={imageText[3]} />
       <SolutionsAccordion />
-      <ProjectsCarousel />
+      <ProjectsCarousel title="AI consulting projects weve delivered" />
       <ClientCarousel />
       <ReferencePresentation />
     </>
