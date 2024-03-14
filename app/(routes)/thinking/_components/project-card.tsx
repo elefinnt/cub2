@@ -14,7 +14,7 @@ const ProjectCard: React.FC<ProjectCardData> = ({ cardData }) => {
   return (
     <div className="work-list">
       {cardData.map((data, i) => (
-        <div className="post-wrapper">
+        <div key={i} className="post-wrapper">
           <div className="post post_work" key={i}>
             <div className="post-info">
               <div className="post-tags">
