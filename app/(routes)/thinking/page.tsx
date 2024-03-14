@@ -1,5 +1,98 @@
 import ProjectCard from "./_components/project-card";
 
+const cardData = [
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+  {
+    tags: ["Artificial Intelligence", "Gen AI", "Product Development"],
+    title:
+      "Generative AI in business: top 5 use cases every company should consider with a free newsletter",
+    thumbnail: "/ai-head-break.jpg",
+  },
+];
+
 const ThinkingsPage = () => {
   return (
     <>
@@ -33,9 +126,7 @@ const ThinkingsPage = () => {
               <span className="blog-filter-badge">25</span>
             </a>
           </div>
-          <div className="work-list">
-            <ProjectCard />
-          </div>
+          <ProjectCard cardData={cardData} />
         </div>
       </div>
     </>

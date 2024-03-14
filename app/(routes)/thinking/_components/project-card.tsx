@@ -1,29 +1,54 @@
 import { LucideIcon } from "lucide-react";
+import Image from "next/image";
 
 interface ProjectCardProps {
-  tags: string;
+  tags: string[];
   title: string;
   thumbnail: string;
-  logo: LucideIcon;
 }
 
 interface ProjectCardData {
-  cardData: ProjectCardProps;
+  cardData: ProjectCardProps[];
 }
-const ProjectCard: React.FC<ProjectCardProps> = ({ cardData }) => {
+const ProjectCard: React.FC<ProjectCardData> = ({ cardData }) => {
   return (
-    <div className="post-wrapper">
-      <div className="post post_work">
-        <div className="post-info">
-          <div className="post-tags">
-            <a>Artifical Intelligence</a>
-            <span>/</span>
-            <a>Gen AI</a>
-            <span>/</span>
-            <a>Product Development</a>
+    <div className="work-list">
+      {cardData.map((data, i) => (
+        <div className="post-wrapper">
+          <div className="post post_work" key={i}>
+            <div className="post-info">
+              <div className="post-tags">
+                <a>{data.tags.join(" / ")}</a>
+                <span>/</span>
+              </div>
+              <a className="post__title">
+                <span>{data.title}</span>
+                <span>
+                  <span className="arrow-link">
+                    <span className="arrow-link-arrow-blue arrow-link-arrow-back">
+                      →
+                    </span>
+                    <span className="arrow-link-arrow-blue arrow-link-arrow-front">
+                      →
+                    </span>
+
+                    <span></span>
+                  </span>
+                </span>
+              </a>
+            </div>
+
+            <a className="post-image">
+              <Image
+                src={data.thumbnail}
+                alt="Project logo"
+                fill
+                className="object-cover"
+              />
+            </a>
           </div>
         </div>
-      </div>
+      ))}
     </div>
   );
 };
