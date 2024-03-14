@@ -875,3 +875,123 @@
 .section-4-table-row div:first-child {
   font-weight: 600;
 }
+.block {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  @apply px-[189px];
+  position: relative;
+  flex: 1 1;
+  padding-bottom: 80px;
+}
+
+.title-micro {
+  margin-bottom: 28px;
+  font-size: 38px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  font-weight: 600;
+}
+.text-mini {
+  font-size: 26px;
+  line-height: 39px;
+  max-width: 930px;
+  letter-spacing: -0.05px;
+  white-space: pre-line;
+}
+.landing-platforms {
+  margin: 0 -20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.landing-platforms-items {
+  flex: 1 1;
+  margin: 0 20px;
+}
+.landing-platforms-title {
+  margin-top: 36px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.05px;
+}
+.landing-platforms-text {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.05px;
+  color: #747272;
+}
+.button {
+  padding: 16px 32px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #fff;
+  background-color: #445aec;
+  user-select: none;
+  cursor: pointer;
+}
+.space-hmt {
+  margin-top: 60px;
+}
+.block-2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.landing-tabs {
+  padding-top: 32px;
+  position: relative;
+}
+.landing-tabs-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #dadada;
+}
+.landing-tabs-tab {
+  padding-bottom: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: -2px;
+  flex: 1 1;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    opacity 0.2s,
+    color 0.2s;
+}
+.landing-tab-icon {
+  max-width: 60px;
+  max-height: 40px;
+  margin-bottom: 24px;
+}
+.landing-tab-item {
+  margin-top: 32px;
+  padding-bottom: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.landing-tab-text {
+  margin: 0 auto;
+  max-width: 1020px;
+  font-size: 26px;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+}

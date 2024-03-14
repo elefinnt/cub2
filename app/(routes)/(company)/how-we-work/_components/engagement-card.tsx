@@ -41,8 +41,8 @@ const EngagementCard: React.FC<EngagementCardDataProps> = ({ cardData }) => {
           {open[i] && (
             <div className="section-3-content-hidden-wrap">
               <div className="section-3-hidden-content">
-                {data.subDesc.map((desc, index) => (
-                  <div key={index} className="section-3-hidden-content-list">
+                {data.subDesc.map((desc, i) => (
+                  <div key={i} className="section-3-hidden-content-list">
                     {desc.body}
                   </div>
                 ))}
