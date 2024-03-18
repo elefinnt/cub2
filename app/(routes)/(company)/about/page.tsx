@@ -154,7 +154,37 @@ const AboutPage = () => {
             <Bus size={52} className="text-yellow mx-[11px]" />
           </span>
         </p>
-        <StatsList statsData={companyData} />
+        <div className="logos">
+          <div className="logos-slide text-black">
+            <a>Rhybox</a>
+            <a>Meetz</a>
+            <a>Edgeify</a>
+            <a>Dabshots</a>
+            <a>Voonder</a>
+            <a>Aimbo</a>
+            <a>Mynte</a>
+            <a>Eidel</a>
+            <a>Yadel</a>
+            <a>Zoozzy</a>
+            <a>Blogspan</a>
+            <a>Edgetag</a>
+          </div>
+
+          <div className="logos-slide text-black">
+            <a>Rhybox</a>
+            <a>Meetz</a>
+            <a>Edgeify</a>
+            <a>Dabshots</a>
+            <a>Voonder</a>
+            <a>Aimbo</a>
+            <a>Mynte</a>
+            <a>Eidel</a>
+            <a>Yadel</a>
+            <a>Zoozzy</a>
+            <a>Blogspan</a>
+            <a>Edgetag</a>
+          </div>
+        </div>
       </div>
     </>
   );
