@@ -121,7 +121,6 @@ const How = () => {
           </div>
           <div className="section-2-tabs">
             <MethodologyTabs />
-            <div className="section-2-tabs-content"></div>
           </div>
         </div>
       </div>

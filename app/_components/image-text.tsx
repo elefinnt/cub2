@@ -13,7 +13,7 @@ interface ImageTextProps {
 const ImageWithText: React.FC<ImageTextProps> = ({ imageTextData }) => {
   return (
     <>
-      <div className="relative w-full min-h-full">
+      <div className="relative w-full min-h-[642px]">
         <div className="relative h-[480px] flex justify-start">
           <Image
             src={imageTextData.image}
@@ -24,10 +24,7 @@ const ImageWithText: React.FC<ImageTextProps> = ({ imageTextData }) => {
           <div className="px-[189px]">
             <h2 className="text-content relative text-white max-w-3xl">
               {imageTextData.whiteText}
-              <span className="text-[#ffdb3b]">
-                {" "}
-                {imageTextData.yellowText}
-              </span>
+              <span className="text-[#ffdb3b]">{imageTextData.yellowText}</span>
             </h2>
           </div>
         </div>
